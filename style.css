@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root{
+    --main-color: #fffbe7;
+    --second-color: #355E3B;
+    --third-color: #e6c619;
+}
+:root{
+    --body-font: 'Montserrat', sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--second-color);  
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+}
+*,html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.section-title {
+  position: relative;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.skill-title {
+  position: relative;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  text-align: end;
+}
+
+.skill-title2 {
+  position: relative;
+  font-size: 2rem;
+  color: var(--third-color);
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  text-align: start;
+}
+/* navbar */
+
+.navbar-container{
+  font-family: var(--body-font);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: var(--second-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+ 
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    margin-right: 30px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}
+a{
+    text-decoration: none;   
+    font-size: var(--normal-font-size);
+    color: var(--main-color);
+}
+a:hover{
+  color: var(--third-color);
+}
+
+.icon{
+    font-size: 28px;
+    display: none;
+}
+
+
+/* end navbar */
+
+/* Home */
+
+.home_section{
+  position: relative;
+  display: flex;
+  padding: 9rem;
+  flex-direction: column;
+}
+.home_wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.home_data{
+  align-content: center;
+}
+.profil{
+  width: 350px;
+}
+.home_data h1{
+  font-weight: bold;
+  color: var(--main-color);
+  font-size: 3rem;
+}
+
+.home_data h2{
+  font-weight: 20px;
+  color: var(--third-color);
+  font-size:2.5rem;
+}
+
+.teks{
+  font-weight: 10px;
+  color: var(--third-color);
+  font-size:1.2rem;
+}
+
+.home_social{
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  margin-left: 2.7rem;
+}
+.home_social a{
+  font-size: 2rem;
+}
+button{
+  width: 180px;
+  padding: 1rem;
+  background-color: var(--main-color);
+  border-radius: 5%;
+  justify-content: center;
+  flex-direction: row;
+  font-family: var(--body-font);
+}
+button:hover{
+  background-color: var(--third-color);
+}
+button p {
+  color: var(--second-color);
+  align-content: center;
+  font-size: 1.2rem;
+}
+button span{
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+/* end Home */
+
+/* About */
+
+.about_container{
+  display: grid;
+  grid-template-columns: 50% 1fr;
+}
+.about_img{
+  justify-self: flex-end;
+  margin-right: 5rem;
+}
+
+.about_subtitle{
+  color: var(--third-color);
+  margin-bottom: 1rem;
+}
+
+.about_teks{
+  color: var(--main-color);
+  text-align: unset;
+}
+.about_container img{
+  width: 270px;
+}
+/* end About */
+
+
+/* Skill */
+
+.skill_body{
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+/* end skill */
